@@ -83,6 +83,8 @@ if($cookie){
 				$reels		= array();
 				$reels_suc	= array();
 				for($i = 0; $i < count($listids); $i++):
+					$sleep_1 = rand(7,17);
+					$sleep_2 = rand(25,35);
 					$getstory   = proccess(1, $useragent, 'feed/user/'.$listids[$i].'/story/', $cookie, 0, array(), $prox['ip'], $prox['user'], $prox['is_socks5']);
 					$getstory   = json_decode($getstory[1], true);
 					foreach($getstory['reel']['items'] as $storyitem):
@@ -148,8 +150,8 @@ if($cookie){
 				echo "[~] ".count($reels)." story from ".$target." collected\n";
 				echo "[~] ".count($reels_suc)." story from ".$target." marked as seen\n";
 				echo "[~] ".count($today)." story reacted today\n";
-				echo "[~] ".date('d-m-Y H:i:s')." - Sleep for 30 second to bypass instagram limit\n";
-				echo "[~] "; for($x = 0; $x <= 4; $x++){ echo "========"; sleep(6); } echo "\n\n";
+				echo "[~] ".date('d-m-Y H:i:s')." - Sleep for 150 second to bypass instagram limit\n";
+				echo "[~] "; for($x = 0; $x <= 4; $x++){ echo "========"; sleep(30); } echo "\n\n";
 			}
 			if(count($today) > '1900'){
 				echo "[~] ".count($today)." seen stories today.\n";

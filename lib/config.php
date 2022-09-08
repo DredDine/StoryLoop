@@ -1,7 +1,7 @@
 <?php
 include('func.php');
 include('igfunc.php');
-date_default_timezone_set('UTC');
+date_default_timezone_set('Asia/Hong_Kong');
 error_reporting(0);
 /*
 Jika akun terkena feedback_required tenang, tinggal tunggu 24 jam ntar pulih lagi

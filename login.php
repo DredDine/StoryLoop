@@ -1,19 +1,18 @@
 <?php
 require('lib/config.php');
-echo "
- _____ _                   _                       
-/  ___| |                 | |                      
-\ `--.| |_ ___  _ __ _   _| |     ___   ___  _ __  
- `--. \ __/ _ \| '__| | | | |    / _ \ / _ \| '_ \ 
-/\__/ / || (_) | |  | |_| | |___| (_) | (_) | |_) |
-\____/ \__\___/|_|   \__, \_____/\___/ \___/| .__/ 
-                      __/ |                 | |    
-                     |___/                  |_|    \n";
-echo "[-] ============ Auto Views Story ============ [-]\n";
-echo "[-] =========== Made by @4xded =========== [-]\n\n";
-echo "[?] Input your instagram username : ";
+echo " 
+
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+	$---------$--------$
+	    View Stories
+	$---------$--------$
+	
+	\n";
+
+echo "[?] Input your Instagram username : ";
 $userig    = trim(fgets(STDIN, 1024));
-echo "[?] Input your instagram password : ";
+echo "[?] Input your Instagram password : ";
 $passig    = trim(fgets(STDIN, 1024));
 //
 $useragent = generate_useragent();
@@ -93,7 +92,7 @@ if($ext->status == 'ok'){
 	        }
 	    }
     } else {
-    	echo "[!] Failed sent verification code ".$cekpoint." - ".var_dump($_SESSION)."\n";
+    	echo "[!] Failed sending verification code ".$cekpoint." - ".var_dump($_SESSION)."\n";
     	echo "[!] Exit...\n";
     	exit();
     }

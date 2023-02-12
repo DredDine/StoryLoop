@@ -15,7 +15,7 @@ echo "
                       __/ |                 | |    
                      |___/                  |_|    \n";
 echo "[-] ============ Auto Views Story ============ [-]\n";
-echo "[-] =========== Made by @4xded =========== [-]\n\n";
+echo "[-] =========== Made by @4xdrd =========== [-]\n\n";
 if($cookie){
 	$getakun	= proccess(1, $useragent, 'accounts/current_user/', $cookie);
 	$getakun	= json_decode($getakun[1], true);
